@@ -46,3 +46,6 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 Coordinates to Country API
 
 Copyright © 2025 Konrad Guzek
+
+The file `iso3-to-2.ts` is an adaptation of source code released under the MIT license, available at [vtex/country-iso-3-to-2](https://github.com/vtex/country-iso-3-to-2).
+This project, including that file, is released under the GNU Affero General Public License v3.
