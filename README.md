@@ -1,4 +1,4 @@
-# Coordinates to Country
+# Coordinates to Country API
 
 This is a simple Node.js Express server to convert coordinates into ISO 3166 alpha-2 or alpha-3 country codes.
 
@@ -15,15 +15,34 @@ There is only one endpoint:
 GET /:latitude/:longitude
 ```
 
-Response format:
+## Response structure
+
+Responses are formatted as JSON.
+
+### 200 response
 
 ```json
 {
+  "error": null,
   "iso2": "PL", // can be null
   "iso3": "POL",
 }
 ```
 
-If the country was not found, it sets both fields to `null` and adds a message in a field called `error`.
+### 429 response (>10 requests in 10s)
+
+```json
+{
+  "error": "Rate limit exceeded",
+  "iso2": null,
+  "iso3": null,
+}
+```
 
 ## Copyright
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+
+Coordinates to Country API
+
+Copyright © 2025 Konrad Guzek
