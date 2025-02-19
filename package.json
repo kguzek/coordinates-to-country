@@ -1,0 +1,40 @@
+{
+  "name": "coordinates-to-country",
+  "version": "1.0.0",
+  "description": "An Express API which converts coordinates to an ISO 3166 alpha-3 country code.",
+  "keywords": [
+    "coordinates",
+    "api",
+    "geolocation",
+    "iso3166",
+    "country",
+    "code",
+    "express"
+  ],
+  "homepage": "https://github.com/kguzek/coordinates-to-country#readme",
+  "bugs": {
+    "url": "https://github.com/kguzek/coordinates-to-country/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kguzek/coordinates-to-country.git"
+  },
+  "license": "AGPL-3.0-or-later",
+  "author": "Konrad Guzek",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "country-iso": "^2.0.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "typescript": "^5.7.3"
+  }
+}
